@@ -1,0 +1,33 @@
+<div ng-init="ucitajKlijente()"></div>
+<body ng-controller="naslovniController">
+
+
+<div >
+   <form class="naslov">
+ <h2 align="center"><b>Svi klijenti</b></h2>
+<span class="dodaj" ng-click="dodajKlijenta()"><button type="button"  class="btn btn-success" > Dodaj klijenta</button></span>
+<span  class="odjava" ng-click="odjava()"><button type="button" class="btn btn-danger">  Odjava  </button></span>
+<input placeholder="Pretrazi" class="form-control" type="text" ng-model="inputTekst1" /> <br/>
+</form>
+<table class="table table-hover">
+  <tr class="thead-dark">
+      <th>Ime</th>
+      <th>Prezime</th> 
+      <th>OIB</th>
+      <th>Godina rodenja</th>
+      <th>Broj telefona</th>
+      <th>Tip police</th>
+      <th>Trajanje police</th>
+      <th>Cijena police</th>
+  </tr>
+  <tr ng-repeat="klijent in listKlijenti | filter:inputTekst1 ">
+    <td>{{klijent.ime}}</td>
+    <td>{{klijent.prezime}}</td> 
+    <td>{{klijent.OIB}}</td>
+    <td>{{klijent.Broj_telefona}}</td>
+    <td>{{klijent.godina_rodenja}}</td>
+    <td>{{klijent.tippolice   | promjeniFormat1 | promjeniFormat2 | promjeniFormat3  | promjeniFormat4 | promjeniFormat5 | promjeniFormat6}}</td>
+    <td>{{klijent.trajanjepolice}} mjeseci</td>
+    <td>{{klijent.tippolice * klijent.trajanjepolice}} kuna </td>
+  </tr>
+</table>

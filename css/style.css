@@ -1,0 +1,97 @@
+
+
+ form
+ {
+ 	width: 50%;
+ 	margin:  60px auto;
+ 	padding: 70px;
+ 	border: 5px solid black;
+ 	background:#F0F8FF;
+ 	border-radius: 20px 20px 20px 20px;
+
+ }
+ body
+ {
+ 	background-color: #b9b9b9;
+ }
+ .form-group
+ {
+ 	text-align: center;
+ }
+ .btn{
+ 	padding-bottom: 10px;
+ 	font-size: 15px;
+ 	color:white;
+ 	border:none;
+ 	margin:10px;
+ 	border-radius: 10px;
+ }
+  .table {
+  font-family: arial, sans-serif;
+  background:#F0F8FF;
+  border:8px solid black;;
+  width: 80%;
+
+
+  margin: 50px auto;
+
+}
+
+body { 
+  background: url(img/osiguranje1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer
+{
+  color: black;
+  font-size: 18;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color:lightgrey;
+  font-family: verdana;
+  font-size: 15px;
+
+}
+.naslov
+{
+  width: 30%;
+  margin:  15px auto;
+  padding: 5px;
+  border: 5px solid black;
+  background:#F0F8FF;
+  border-radius: 20px 20px 20px 20px;
+
+}
+.dodaj
+{
+ margin-left:10%;
+ margin-right:20%;
+ margin-top:5%;
+ margin-bottom:0%;
+}
+.odjava
+{
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:5%;
+ margin-bottom:0%;
+}
+.col-sm-2
+{
+  padding: 10px;
+  font-size:20;
+  background-color: #F0F8FF;
+
+}
+.gumbic{
+  padding-bottom: 10px;
+  font-size: 15px;
+  color:white;
+  border:none;
+  margin:10px;
+  border-radius: 10px;
+ }

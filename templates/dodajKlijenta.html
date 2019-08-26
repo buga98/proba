@@ -1,0 +1,45 @@
+<div class="login-form">
+    <form>
+        <h1 class="text-center">Dodaj klijenta <p class="glyphicon glyphicon-user"></p></h1>   
+
+        <div class="form-group">
+            <input type="text"  ng-model="formDodajKlijenta.ime" placeholder="Ime" required>
+        </div>
+        <div class="form-group">
+            <input type="text"  ng-model="formDodajKlijenta.prezime" placeholder="Prezime" required>
+        </div>
+        <div class="form-group">
+         
+            <input type="text"  ng-model="formDodajKlijenta.OIB" placeholder="OIB" required>
+        </div>
+        <div class="form-group">
+           
+            <input type="text"  ng-model="formDodajKlijenta.Broj_telefona" placeholder="Broj telefona" required>
+        </div>
+        <div class="form-group">
+            
+            <input type="text"  ng-model="formDodajKlijenta.godina_rodenja" placeholder="Godina rodenja" required>
+        </div>
+        <div  class="form-group">
+            <label>Tip police</label>
+            <br>
+            <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="100" > Auto osiguranje<br>
+             <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="200" > Zivotno osiguranje<br>
+              <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="300" > Imovinsko osiguranje<br>
+              <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="400" > Putno osiguranje<br>
+              <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="500" > Transportno osiguranje<br>
+              <input type="radio"  ng-model="formDodajKlijenta.tippolice" value="600" > Zdrastveno osiguranje<br>
+        </div>
+        <div class="form-group">
+            <label>Trajanje police</label>
+            <br>
+            <input type="radio"  ng-model="formDodajKlijenta.trajanjepolice" value="12" >Jedna godina<br>
+             <input type="radio"  ng-model="formDodajKlijenta.trajanjepolice" value="24" >Dvije godine<br>
+              <input type="radio"  ng-model="formDodajKlijenta.trajanjepolice" value="36" >Tri godine
+        </div>
+        
+        <div >
+            <button type="button" ng-click="dodajK()" class="btn btn-block btn-primary">Dodaj</button>
+        </div>      
+    </form>
+</div

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin index</title>
+</head>
+<body>
+
+<div ng-init="ucitajUsers()"></div>
+
+ <form class="naslov">
+ <h2 align="center"><b>Svi agenti</b></h2>
+<span class="dodaj" ng-click="dodajAgenta()"><button type="button"  class="btn btn-success" > Dodaj agenta</button></span>
+<span  class="odjava" ng-click="odjava()"><button type="button" class="btn btn-danger">  Odjava  </button></span>
+</form>
+<table class="table table-hover">
+    
+ 
+  <tr class="thead-dark">
+    <th>Username</th> 
+    <th>Ime</th>
+     <th>Prezime</th>
+    <th>E-mail</th>
+  </tr>
+  <tr ng-repeat="user in listUsers">
+    <td>{{user.username}}</td>
+    <td>{{user.ime}}</td> 
+    <td>{{user.prezime}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+</html>
+
+

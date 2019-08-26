@@ -1,0 +1,25 @@
+
+    <div class="login-form">
+    <form >
+        <h1 class="text-center">Dodaj agenta <p class="glyphicon glyphicon-user"></p></h1>       
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="formDodajAgenta.username"  placeholder="Username" required >
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="formDodajAgenta.ime"  placeholder="Ime"  required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="formDodajAgenta.prezime" placeholder="Prezime"  required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" ng-model="formDodajAgenta.password" placeholder="Password" >
+        </div>
+        <div class="form-group">
+            <input type="email"  class="form-control" ng-model="formDodajAgenta.email" placeholder="primjer@gmail.com"  required>
+        </div>
+        <div class="form-group">
+            <button type="button" ng-click="dodajA()" class="btn btn-block btn-primary" >Dodaj</button>
+        </div>      
+    </form>
+</div>
+
